@@ -10,7 +10,7 @@ Opening an ender chest from the invetory/hotbar requires the player to right cli
 
 | Command | Usage | Aliases |
 | --- | --- | --- |
-| `/enderchest` | `Opens the enderchest by a command | `/echest, /ec` |
+| `/enderchest` | `Opens the enderchest by a command` | `/echest, /ec` |
 | `/togglesimpleechest` | `Toggles opening an enderchest from inventory/hotbar.` | `/toggleec, /ectoggle` |
 
 ## Permissions
