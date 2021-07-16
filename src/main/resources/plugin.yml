@@ -1,0 +1,54 @@
+name: SimplEchest
+main: com.simplechest.SimplEchest
+
+author: BigPingLowIQ
+description: This is a very simple plugin to open the enderchest in a few different ways.
+
+version: ${project.version}
+api-version: 1.14
+database: false
+
+
+commands:
+  toggleSimpleechest:
+    description: Toggles if you want to open the enderchest in your inventory/hotbar.
+    usage: /<command>
+    permission: simplechest.inventoryenderchest
+    permission-message: You don't have permission to do this.
+    aliases:
+      - toggleec
+      - ectoggle
+  enderchest:
+    description: Open the enderchest.
+    usage: /<command>
+    permission: simplechest.enderchest
+    permission-message: You don't have permission to do this.
+    aliases:
+      - ec
+      - echest
+
+permissions:
+  simplechest.*:
+    description: Gives access to all features of this plugin.
+    default: op
+    children:
+      simplechest.inventoryenderchest: true
+      simplechest.enderchest: true
+      simplechest.enderchest.invsee: true
+  simplechest.inventoryenderchest:
+    description: Allows the player to open the enderchest in his inventory.
+    default: op
+  simplechest.enderchest.*:
+    description: Gives access to open your enderchest and other players one.
+    default: op
+    children:
+      simplechest.enderchest: true
+      simplechest.enderchest.invsee: true
+  simplechest.enderchest:
+    description: Allows the player to open the enderchest using "/enderchest".
+    default: op
+  simplechest.enderchest.invsee:
+    description: Allows the player to open other enderchests.
+    default: op
+    children:
+      simplechest.enderchest: true
