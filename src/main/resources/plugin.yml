@@ -10,7 +10,7 @@ database: false
 
 
 commands:
-  toggleSimpleechest:
+  togglesimpleechest:
     description: Toggles if you want to open the enderchest in your inventory/hotbar.
     usage: /<command>
     permission: simplechest.inventoryenderchest

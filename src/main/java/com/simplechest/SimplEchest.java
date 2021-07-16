@@ -26,7 +26,7 @@ public final class SimplEchest extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new InventoryClick(),this);
         getServer().getPluginManager().registerEvents(new PlayerJoin(),this);
         getServer().getPluginManager().registerEvents(new PlayerInteract(),this);
-        getCommand("toggleSimpleechest").setExecutor(new ToggleEchest());
+        getCommand("togglesimpleechest").setExecutor(new ToggleEchest());
         getCommand("enderchest").setExecutor(new EnderChest());
     }
 
