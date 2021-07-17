@@ -5,6 +5,7 @@ import com.simplechest.commands.ToggleEchest;
 import com.simplechest.events.InventoryClick;
 import com.simplechest.events.PlayerInteract;
 import com.simplechest.events.PlayerJoin;
+import com.simplechest.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
@@ -20,6 +21,14 @@ public final class SimplEchest extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         instance = this;
+
+        new UpdateChecker(instance,94336);
+
+        int pluginId = 12088;
+        Metrics metrics = new Metrics(instance,pluginId);
+
+
+
 
         loadPlayers();
 
