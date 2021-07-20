@@ -26,6 +26,13 @@ commands:
     aliases:
       - ec
       - echest
+  enderchestlist:
+    description: Opens a list of all players online to open their enderchest.
+    usage: /<command>
+    permission: simplechest.enderchestlist
+    permission-message: You don't have permission to do this.
+    aliases:
+      - eclist
 
 permissions:
   simplechest.*:
@@ -35,6 +42,7 @@ permissions:
       simplechest.inventoryenderchest: true
       simplechest.enderchest: true
       simplechest.enderchest.invsee: true
+      simplechest.enderchestlist: true
   simplechest.inventoryenderchest:
     description: Allows the player to open the enderchest in his inventory.
     default: op
@@ -52,3 +60,6 @@ permissions:
     default: op
     children:
       simplechest.enderchest: true
+  simplechest.enderchestlist:
+    description: Allows the player to open a list of all players online to open their enderchest.
+    default: op
